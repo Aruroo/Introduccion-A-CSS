@@ -6,6 +6,7 @@
     font-size: 20px;
     font-weight: bold;
     font-family:  Helvetica;  
+    margin: 10px 20px;
 
 }
 .preguntas{
@@ -16,7 +17,30 @@
     font-size: 15px;
     font-weight: bold;
     font-family:  Helvetica;  
-    margin: 20px;
+    margin: 20px 100px;
+}
+.pregunta{
+    background-color: #bdbdbd;
+    color: #161616;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    font-family:  Helvetica;  
+    margin: 10px 50px;
+}
+
+.contacto {
+    cursor: pointer;
+    position: fixed;
+    bottom: 10px;
+    right: 180px;
+    width: 20px;
+}
+
+.contacto:hover{
+    color:bisque;
+    background-color: #161616;
 }
 
 body{
