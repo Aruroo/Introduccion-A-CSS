@@ -10,7 +10,7 @@
 
 }
 .preguntas{
-    background-color: #f5ebff;
+    background-color: #c68cff;
     color: #161616;
     padding: 10px;
     text-align: center;
@@ -20,7 +20,7 @@
     margin: 20px 100px;
 }
 .pregunta{
-    background-color: #ffebff;
+    background-color: #e4c1ff;
     color: #161616;
     padding: 10px;
     border: 2px solid;
@@ -47,6 +47,7 @@
 
 .button {
     background-color: #6e87e0; 
+    cursor: pointer;
     border: none;
     color: white;
     padding: 15px 32px;
@@ -54,8 +55,14 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-  }
+    border-radius: 10px;
+}
+
+.button:hover{
+    background-color: rgb(86, 0, 160);
+    color: #e0e0e0; 
+}
 
 body{
-    background-color: #f5ebff;
+    background-color: #d2a5ff;
 }

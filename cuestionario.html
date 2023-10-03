@@ -12,31 +12,30 @@
 </div>
 
 <div class="preguntas">
-
-    <div class="preguntas">
+    <form action="respuestas.php" method="POST">
         <div class="pregunta">
             <p>¿Cuál es el objetivo principal de su página web?</p>
-            <input type="checkbox" name="ofrecer productos" id="ofrecer-productos">
+            <input type="checkbox" name="objetivo[]" id="ofrecer-productos" value="ofrecer productos">
             <label for="ofrecer-productos"> Ofrecer productos </label><br>
-            <input type="checkbox" name="ofrecer servicios" id="ofrecer-servicios">
+            <input type="checkbox" name="objetivo[]" id="ofrecer-servicios" value="ofrecer servicios">
             <label for="ofrecer-servicios">Ofrecer servicios</label><br>
-            <input type="checkbox" name="personal" id="personal">
+            <input type="checkbox" name="objetivo[]" id="personal" value="personal">
             <label for="personal">Personal</label><br>
-            <input type="checkbox" name="informativo" id="informativo">
+            <input type="checkbox" name="objetivo[]" id="informativo" value="informativo">
             <label for="informativo">Informativo</label>
             <br>
-            <input type="checkbox" name="interaccion" id="interaccion">
+            <input type="checkbox" name="objetivo[]" id="interaccion" value="interaccion">
             <label for="interaccion">Interacción entre usuarios</label>
         </div>
         <div class="pregunta">
             <p>¿Qué tipo de contenido desea mostrar en su página web?</p>
-            <input type="checkbox" name="videos" id="videos">
+            <input type="checkbox" name="contenido[]" id="videos" value="videos">
             <label for="videos"> Videos </label>
-            <input type="checkbox" name="fotos" id="fotos">
+            <input type="checkbox" name="contenido[]" id="fotos" value="fotos">
             <label for="fotos">Fotos</label>
-            <input type="checkbox" name="texto" id="texto">
+            <input type="checkbox" name="contenido[]" id="texto" value="texto">
             <label for="texto">Texto</label>
-            <input type="checkbox" name="audio" id="audio">
+            <input type="checkbox" name="contenido[]" id="audio" value="audio">
             <label for="audio">Audio</label>
         </div>
         <div class="pregunta">
@@ -51,48 +50,48 @@
         </div>
         <div class="pregunta">
             <p>¿Quién es su público objetivo?</p>
-            <input type="radio" checked="checked" name="edad">
+            <input type="radio" checked="checked" name="publico" value="Infantil (8-13 años)">
             <label>Infantil (8-13 años)</label><br>
-            <input type="radio" name="edad">
+            <input type="radio" name="publico" value="Juvenil (14-19 años)">
             <label>Juvenil (14-19 años)</label><br>
-            <input type="radio" name="edad">
+            <input type="radio" name="publico" value="Adultos jovenes (20-29 años)">
             <label>Adultos jovenes (20-29 años)</label><br>
-            <input type="radio" name="edad">
+            <input type="radio" name="publico" value="Adultos (30-59 años)">
             <label>Adultos (30-59 años)</label><br>
-            <input type="radio" name="edad">
+            <input type="radio" name="publico" value="Adultos mayores (60 años en adelante)">
             <label>Adultos mayores (60 años en adelante)</label><br>
         </div>
         <div class="pregunta">
             <p>¿Cómo espera atraer a su público a la página web?</p>
-            <input type="radio" checked="checked" name="interes">
+            <input type="radio" checked="checked" name="atraer" value="Su diseño llamativo">
             <label>Su diseño llamativo</label><br>
-            <input type="radio" name="interes">
+            <input type="radio" name="atraer" value="Mediante el contenido">
             <label>Mediante el contenido</label><br>
-            <input type="radio" name="interes">
+            <input type="radio" name="atraer" value="Publicitando la página">
             <label>Publicitando la página</label><br>
         </div>
         <div class="pregunta">
             <p>¿Qué presupuesto tiene para su proyecto de página web?</p>
-            <input type="radio" checked="checked" name="presupuesto">
+            <input type="radio" checked="checked" name="presupuesto" value="6-10 mil pesos">
             <label>6-10 mil pesos</label><br>
-            <input type="radio" name="presupuesto">
+            <input type="radio" name="presupuesto" value="11-20 mil pesos">
             <label>11-20 mil pesos</label><br>
-            <input type="radio" name="presupuesto">
+            <input type="radio" name="presupuesto" value="21-30 mil pesos">
             <label>21-30 mil pesos</label><br>
         </div>
         <div class="pregunta">
             <p>¿Qué plazo tiene para lanzar su página web?</p>
-            <input type="radio" checked="checked" name="tiempo">
+            <input type="radio" checked="checked" name="plazo" value="Un mes">
             <label>Un mes</label><br>
-            <input type="radio" name="tiempo">
+            <input type="radio" name="plazo" value="Menos a tres meses">
             <label>Menos a tres meses</label><br>
-            <input type="radio" name="tiempo">
+            <input type="radio" name="plazo" value="Seis meses">
             <label>Seis meses</label><br>
-            <input type="radio" name="tiempo">
+            <input type="radio" name="plazo" value="Doce meses">
             <label>Doce meses</label><br>
         </div>
-    </div>
-    <button class="button">Button</button>
+        <button class="button" type="submit">Enviar</button>
+    </form>
 </div>
 
 <div class="contacto">
