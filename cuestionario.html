@@ -1,65 +1,103 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width initial-scale=1.0" >
-        <title>Cuestionario de preferencias</title>
-        <link href="./estilos.css" rel="stylesheet">
-    </head>
-    <div class="franja">
-        <p> Cuestionario de preferencias </p>
-    </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <title>Cuestionario de preferencias</title>
+    <link href="./estilos.css" rel="stylesheet">
+</head>
+<div class="franja">
+    <p> Cuestionario de preferencias </p>
+</div>
+
+<div class="preguntas">
 
     <div class="preguntas">
-        
-        <div class="preguntas">
-            <div class="pregunta">
-                <p>¿Cuál es el objetivo principal de su página web?</p>
-                    <input type="checkbox" name="ofrecer productos" id="ofrecer-productos" >
-                    <label for="ofrecer-productos" > Ofrecer productos  </label>
-                    <input type="checkbox" name="ofrecer servicios" id="ofrecer-servicios" >
-                    <label for="ofrecer-servicios" >Ofrecer servicios</label>
-                    <input type="checkbox" name="personal" id="personal" >
-                    <label for="personal" >Personal</label>
-                    <input type="checkbox" name="informativo" id="informativo" >
-                    <label for="informativo" >Informativo</label>
-                    <br>
-                    <input type="checkbox" name="interaccion" id="interaccion" >
-                    <label for="interaccion" >Interacción entre usuarios</label>
-            </div>
-            <div class="pregunta">
-                <p>¿Qué tipo de contenido desea mostrar en su página web?</p>
-                    <input type="checkbox" name="videos" id="videos" >
-                    <label for="videos" > Videos  </label>
-                    <input type="checkbox" name="fotos" id="fotos" >
-                    <label for="fotos" >Fotos</label>
-                    <input type="checkbox" name="texto" id="texto" >
-                    <label for="texto" >Texto</label>
-                    <input type="checkbox" name="audio" id="audio" >
-                    <label for="audio" >Audio</label>
-            </div>
-            <div class="pregunta">
-                <p>¿Qué diseño, estilo y colores le gustaría tener en su página web?</p>
-                <input type="text" name="diseno" id="diseno" placeholder="Ingrese su respuesta aquí">
-            </div>
-            <div class="pregunta">
-                <p>¿Qué funcionalidades o características especiales necesita su página web?</p>
-            </div>
-            <div class="pregunta">
-                <p>¿Quién es su público objetivo y cómo espera atraerlo a su página web?</p>
-            </div>
-            <div class="pregunta">
-                <p>¿Qué presupuesto tiene para su proyecto de página web?</p>
-            </div>
-            <div class="pregunta">
-                <p>¿Qué plazo tiene para lanzar su página web?</p>
-            </div>
+        <div class="pregunta">
+            <p>¿Cuál es el objetivo principal de su página web?</p>
+            <input type="checkbox" name="ofrecer productos" id="ofrecer-productos">
+            <label for="ofrecer-productos"> Ofrecer productos </label><br>
+            <input type="checkbox" name="ofrecer servicios" id="ofrecer-servicios">
+            <label for="ofrecer-servicios">Ofrecer servicios</label><br>
+            <input type="checkbox" name="personal" id="personal">
+            <label for="personal">Personal</label><br>
+            <input type="checkbox" name="informativo" id="informativo">
+            <label for="informativo">Informativo</label>
+            <br>
+            <input type="checkbox" name="interaccion" id="interaccion">
+            <label for="interaccion">Interacción entre usuarios</label>
+        </div>
+        <div class="pregunta">
+            <p>¿Qué tipo de contenido desea mostrar en su página web?</p>
+            <input type="checkbox" name="videos" id="videos">
+            <label for="videos"> Videos </label>
+            <input type="checkbox" name="fotos" id="fotos">
+            <label for="fotos">Fotos</label>
+            <input type="checkbox" name="texto" id="texto">
+            <label for="texto">Texto</label>
+            <input type="checkbox" name="audio" id="audio">
+            <label for="audio">Audio</label>
+        </div>
+        <div class="pregunta">
+            <p>¿Qué diseño, estilo y colores le gustaría tener en su página web?</p>
+            <input type="text" style="WIDTH: 400px; HEIGHT: 80px" name="diseno" id="diseno"
+                placeholder="Ingrese su respuesta aquí">
+        </div>
+        <div class="pregunta">
+            <p>¿Qué funcionalidades o características especiales necesita su página web?</p>
+            <input type="text" style="WIDTH: 400px; HEIGHT: 80px" name="funcionalidades" id="diseno"
+                placeholder="Ingrese su respuesta aquí">
+        </div>
+        <div class="pregunta">
+            <p>¿Quién es su público objetivo?</p>
+            <input type="radio" checked="checked" name="edad">
+            <label>Infantil (8-13 años)</label><br>
+            <input type="radio" name="edad">
+            <label>Juvenil (14-19 años)</label><br>
+            <input type="radio" name="edad">
+            <label>Adultos jovenes (20-29 años)</label><br>
+            <input type="radio" name="edad">
+            <label>Adultos (30-59 años)</label><br>
+            <input type="radio" name="edad">
+            <label>Adultos mayores (60 años en adelante)</label><br>
+        </div>
+        <div class="pregunta">
+            <p>¿Cómo espera atraer a su público a la página web?</p>
+            <input type="radio" checked="checked" name="interes">
+            <label>Su diseño llamativo</label><br>
+            <input type="radio" name="interes">
+            <label>Mediante el contenido</label><br>
+            <input type="radio" name="interes">
+            <label>Publicitando la página</label><br>
+        </div>
+        <div class="pregunta">
+            <p>¿Qué presupuesto tiene para su proyecto de página web?</p>
+            <input type="radio" checked="checked" name="presupuesto">
+            <label>6-10 mil pesos</label><br>
+            <input type="radio" name="presupuesto">
+            <label>11-20 mil pesos</label><br>
+            <input type="radio" name="presupuesto">
+            <label>21-30 mil pesos</label><br>
+        </div>
+        <div class="pregunta">
+            <p>¿Qué plazo tiene para lanzar su página web?</p>
+            <input type="radio" checked="checked" name="tiempo">
+            <label>Un mes</label><br>
+            <input type="radio" name="tiempo">
+            <label>Menos a tres meses</label><br>
+            <input type="radio" name="tiempo">
+            <label>Seis meses</label><br>
+            <input type="radio" name="tiempo">
+            <label>Doce meses</label><br>
         </div>
     </div>
+    <button class="button">Button</button>
+</div>
 
-    <div class="contacto">
-        <p> Contactenos </p>
-    </div>
+<div class="contacto">
+    <p> Contactenos </p>
+</div>
 
 
 </html>
